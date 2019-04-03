@@ -419,15 +419,31 @@ app.layout = html.Div(children=[
     dcc.Tab(label="DATA14", value="DATA14", style=tab_style,            selected_style=tab_selected_style,
     children=[
         html.Div([
+                        html.H3('herokuで共有も簡単！')
+                    ], style = {'textAlign': 'Center', 'fontSize': '2.5rem', 'background': '#EEFFDD', 'marginTop': '5%'}),
+                    html.Div([
+                        html.H3('Dashはウェブアプリケーション！！！'),
+                        html.H3('hrokuに簡単に上げられる！！！'),
+                        html.H3('方法は二つ！'),
+                        html.H3('１．ヘロクにコマンドラインなどを使ってあげる'),
+                        html.H3('２．ヘロクにgithubをつないで'),
+                        html.H3('これにより、私のようなサーバー全然わからないみたいな人もウェブでデータを共有できる！')
+                    ], style = {'textAlign': 'Center', 'fontSize': '2rem', 'background': '#EEFFDD', 'padding': 50, 'color': 'limegreen', 'marginTop': '5%'})
+    ])
+
+    #DATA15
+    dcc.Tab(label="DATA15", value="DATA15", style=tab_style,            selected_style=tab_selected_style,
+    children=[
+        html.Div([
                         html.H3('今日のまとめ')
                     ], style = {'textAlign': 'Center', 'fontSize': '2.5rem', 'background': '#EEFFDD', 'marginTop': '5%'}),
                     html.Div([
                         html.H3('このようにDashを使えば、かなりの量のデータを使った可視化が簡単にできる！'),
                         html.H3('これを使えば、これまで以上にデータから情報を得ることが可能になる！'),
                         html.H3('プレゼンテーションでも使えるのではないか？'),
-                        html.H3('もしそのような使い方ができるのであれば、多くの意見が得られるようになり、これまでにないデータの活用ができる！'),
-                        html.H3('Dashの難点・・カッコが多い！！！！'),
-                        html.H3('まぁCSSの使い方なんかを覚えられるのは良い')
+                        html.H3('そのような使い方ができるのであれば、多くの意見が得られるようになり、これまでにないデータの活用ができる！'),
+                        html.H3('注意'),
+                        html.H3('Dashの最新のバージョンは0.40.0になっていますが、これを使ってherokuにアップすると、とんでもない表示になります。0.39.0を使いましょう！')
                     ], style = {'textAlign': 'Center', 'fontSize': '2rem', 'background': '#EEFFDD', 'padding': 50, 'color': 'limegreen', 'marginTop': '5%'})
     ])
 
