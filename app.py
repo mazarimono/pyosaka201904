@@ -428,7 +428,8 @@ app.layout = html.Div(children=[
                         html.H3('１．herokuにコマンドラインなどを使ってあげる'),
                         html.H3('２．herokuにgithubをつないで'),
                         html.H3('これにより、私のようなサーバー全然わからないみたいな人もウェブでデータを共有できる！'),
-                        html.H3('2を使うと、みんなでgithubをいじりながら、ライブアップデートしてデータを見るようなこともできる'),
+                        html.H3('2を使うと、みんなでgithubをいじりながら、ライブアップデートしてデータを見るようなことができる'),
+                        html.H3('Uxeeeiii'),
                     ], style = {'textAlign': 'Center', 'fontSize': '2rem', 'background': '#EEFFDD', 'padding': 50, 'color': 'limegreen', 'marginTop': '5%'})
     ]),
 
