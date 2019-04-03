@@ -425,9 +425,10 @@ app.layout = html.Div(children=[
                         html.H3('Dashはウェブアプリケーション！！！'),
                         html.H3('hrokuに簡単に上げられる！！！'),
                         html.H3('方法は二つ！'),
-                        html.H3('１．ヘロクにコマンドラインなどを使ってあげる'),
-                        html.H3('２．ヘロクにgithubをつないで'),
-                        html.H3('これにより、私のようなサーバー全然わからないみたいな人もウェブでデータを共有できる！')
+                        html.H3('１．herokuにコマンドラインなどを使ってあげる'),
+                        html.H3('２．herokuにgithubをつないで'),
+                        html.H3('これにより、私のようなサーバー全然わからないみたいな人もウェブでデータを共有できる！'),
+                        html.H3('2を使うと、みんなでgithubをいじりながら、ライブアップデートしてデータを見るようなこともできる'),
                     ], style = {'textAlign': 'Center', 'fontSize': '2rem', 'background': '#EEFFDD', 'padding': 50, 'color': 'limegreen', 'marginTop': '5%'})
     ]),
 
