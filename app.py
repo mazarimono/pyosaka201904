@@ -384,7 +384,7 @@ app.layout = html.Div(children=[
                         id = 'interval_components',
                         interval = 1000,
                         )
-                ], style={'height': '30%', 'width': '80%', 'margin': '0 auto 0', 'textAlign': 'center'、'background': '#EEFFDD、}),
+                ], style={'height': '30%', 'width': '80%', 'margin': '0 auto 0', 'textAlign': 'center','background': '#EEFFDD'}),
                 ]),
             ]),
 
@@ -429,10 +429,10 @@ app.layout = html.Div(children=[
                         html.H3('２．ヘロクにgithubをつないで'),
                         html.H3('これにより、私のようなサーバー全然わからないみたいな人もウェブでデータを共有できる！')
                     ], style = {'textAlign': 'Center', 'fontSize': '2rem', 'background': '#EEFFDD', 'padding': 50, 'color': 'limegreen', 'marginTop': '5%'})
-    ])
+    ]),
 
     #DATA15
-    dcc.Tab(label="DATA15", value="DATA15", style=tab_style,            selected_style=tab_selected_style,
+    dcc.Tab(label="DATA15", value="DATA15", style=tab_style, selected_style=tab_selected_style,
     children=[
         html.Div([
                         html.H3('今日のまとめ')
