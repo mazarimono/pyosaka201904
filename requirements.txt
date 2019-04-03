@@ -1,0 +1,9 @@
+dash
+dash-core-components
+dash-html-components
+dash-table
+dash-cytoscape
+plotly
+pandas
+numpy
+gunicorn
