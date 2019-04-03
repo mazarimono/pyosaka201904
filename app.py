@@ -199,53 +199,53 @@ app.layout = html.Div(children=[
 
         ]),
 
-    #DATA7
-        dcc.Tab(label="DATA7", value="DATA7", style=tab_style, selected_style=tab_selected_style,
-        children=[
-            html.Div([
-                    html.H3('都道府県別一人当たりGDP')
-                ], style = {'textAlign': 'Center', 'fontSize': '2rem', 'background': '#EEFFDD'}),
-                html.Div([
-                dcc.Graph(
-                    id='pergdpGraph',
-                    figure={
-                    'data': [
-                        go.Scatter(
-                            x = dffpergdp[dffpergdp['area'] == i]['year'],
-                            y = dffpergdp[dffpergdp['area'] == i]['value'],
-                            name = i,
-                            mode = 'lines'
-                        ) for i in dffpergdp.area.unique()
-                    ],
-                    'layout':go.Layout(
-                        xaxis= {'title': '年度'},
-                        yaxis= {'title': '一人当たりGDP'},
-                        height = 700,
-                    )
-                }
-                )
-                ], style ={'height': '80%', 'background': '#EEFFDD'}),
-                html.Div([
-                dcc.Graph(
-                    id='pergdpGraph2',
-                    figure={
-                    'data': [
-                        go.Scatter(
-                            x = dfpergdp[dfpergdp['area'] == i]['year'],
-                            y = dfpergdp[dfpergdp['area'] == i]['value'],
-                            name = i,
-                            mode = 'lines'
-                        ) for i in dfpergdp.area.unique()
-                    ],
-                    'layout':go.Layout(
-                        xaxis= {'title': '年度'},
-                        yaxis= {'title': '一人当たりGDP'},
-                        height = 700,
-                    )
-                }
-                )
-                ], style ={'height': '80%', 'background': '#EEFFDD'}), 
-                    ]),
+    # #DATA7
+    #     dcc.Tab(label="DATA7", value="DATA7", style=tab_style, selected_style=tab_selected_style,
+    #     children=[
+    #         html.Div([
+    #                 html.H3('都道府県別一人当たりGDP')
+    #             ], style = {'textAlign': 'Center', 'fontSize': '2rem', 'background': '#EEFFDD'}),
+    #             html.Div([
+    #             dcc.Graph(
+    #                 id='pergdpGraph',
+    #                 figure={
+    #                 'data': [
+    #                     go.Scatter(
+    #                         x = dffpergdp[dffpergdp['area'] == i]['year'],
+    #                         y = dffpergdp[dffpergdp['area'] == i]['value'],
+    #                         name = i,
+    #                         mode = 'lines'
+    #                     ) for i in dffpergdp.area.unique()
+    #                 ],
+    #                 'layout':go.Layout(
+    #                     xaxis= {'title': '年度'},
+    #                     yaxis= {'title': '一人当たりGDP'},
+    #                     height = 700,
+    #                 )
+    #             }
+    #             )
+    #             ], style ={'height': '80%', 'background': '#EEFFDD'}),
+    #             html.Div([
+    #             dcc.Graph(
+    #                 id='pergdpGraph2',
+    #                 figure={
+    #                 'data': [
+    #                     go.Scatter(
+    #                         x = dfpergdp[dfpergdp['area'] == i]['year'],
+    #                         y = dfpergdp[dfpergdp['area'] == i]['value'],
+    #                         name = i,
+    #                         mode = 'lines'
+    #                     ) for i in dfpergdp.area.unique()
+    #                 ],
+    #                 'layout':go.Layout(
+    #                     xaxis= {'title': '年度'},
+    #                     yaxis= {'title': '一人当たりGDP'},
+    #                     height = 700,
+    #                 )
+    #             }
+    #             )
+    #             ], style ={'height': '80%', 'background': '#EEFFDD'}), 
+    #                 ]),
 
     #DATA8
         dcc.Tab(label="DATA8", value="DATA8", style=tab_style, selected_style=tab_selected_style,
