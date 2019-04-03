@@ -376,7 +376,7 @@ app.layout = html.Div(children=[
     children=[
         html.Div([
                 html.Div([
-                    html.H3(['ライブアップデートもいける！'], style = {'textAlign': 'Center', 'fontSize': '2.5rem', 'background': '#EEFFDD', 'marginTop': '5%'})
+                    html.H3(['ライブアップデートもできる！'], style = {'textAlign': 'Center', 'fontSize': '2.5rem', 'background': '#EEFFDD', 'marginTop': '5%'})
                 ]),
                 html.Div([
                     dcc.Graph(id="usdjpy"),
@@ -384,7 +384,7 @@ app.layout = html.Div(children=[
                         id = 'interval_components',
                         interval = 1000,
                         )
-                ], style={'height': '30%', 'width': '80%', 'margin': '0 auto 0', 'textAlign': 'center'}),
+                ], style={'height': '30%', 'width': '80%', 'margin': '0 auto 0', 'textAlign': 'center'、'background': '#EEFFDD、}),
                 ]),
             ]),
 
@@ -415,6 +415,21 @@ app.layout = html.Div(children=[
                     ]),
                 ]),
 
+    #DATA14
+    dcc.Tab(label="DATA14", value="DATA14", style=tab_style,            selected_style=tab_selected_style,
+    children=[
+        html.Div([
+                        html.H3('今日のまとめ')
+                    ], style = {'textAlign': 'Center', 'fontSize': '2.5rem', 'background': '#EEFFDD', 'marginTop': '5%'}),
+                    html.Div([
+                        html.H3('このようにDashを使えば、かなりの量のデータを使った可視化が簡単にできる！'),
+                        html.H3('これを使えば、これまで以上にデータから情報を得ることが可能になる！'),
+                        html.H3('プレゼンテーションでも使えるのではないか？'),
+                        html.H3('もしそのような使い方ができるのであれば、多くの意見が得られるようになり、これまでにないデータの活用ができる！'),
+                        html.H3('Dashの難点・・カッコが多い！！！！'),
+                        html.H3('まぁCSSの使い方なんかを覚えられるのは良い')
+                    ], style = {'textAlign': 'Center', 'fontSize': '2rem', 'background': '#EEFFDD', 'padding': 50, 'color': 'limegreen', 'marginTop': '5%'})
+    ])
 
     ])
 ])
