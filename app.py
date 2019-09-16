@@ -61,7 +61,7 @@ dfmany = pd.read_csv(
 available_indicators = dfmany['Indicator Name'].unique()
 
 # DATA12
-dfjpy = pd.read_csv('https://raw.githubusercontent.com/plotly/dash-web-trader/master/pairs/USDJPY.csv', index_col=1, parse_dates=['Date'])
+dfjpy = pd.read_csv('https://raw.githubusercontent.com/plotly/dash-sample-apps/master/apps/dash-web-trader/data/USDJPY.csv', index_col=1, parse_dates=['Date'])
 dffjpy = dfjpy['2016/1/5']
 dffjpy = dffjpy.resample('1S').last().bfill()
 
